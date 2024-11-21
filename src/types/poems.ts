@@ -1,4 +1,4 @@
-export interface Poem {
+export interface PoemType {
   author: string,
   linecount: string,
   lines: Array<string>,
