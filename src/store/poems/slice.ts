@@ -10,8 +10,11 @@ export const poemsSlice = createSlice({
     reducers: {
         updateAllPoems: (store, action: PayloadAction<Array<PoemType>>) => {
             store.allPoems = action.payload
+        },
+        updateDetailPoem: (store, action: PayloadAction<PoemType>) => {
+            store.detailPoemm = action.payload
         }
     }
 })
 
-export const { updateAllPoems } = poemsSlice.actions
+export const { updateAllPoems, updateDetailPoem } = poemsSlice.actions
