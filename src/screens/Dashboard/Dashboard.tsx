@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { getAllPoems } from "../../services/poetry";
 import "./dashboard.css";
 
 // interface DashboardProps {
@@ -10,6 +12,14 @@ import "./dashboard.css";
 // }
 
 export const Dashboard = () => {
+
+  useEffect(() => {
+    const doFetch = async () => {
+      await getAllPoems()
+    }
+    doFetch()
+  })
+
   return <>
     <div className="dashboard">
       <h1 className="dashboard-title">Poem Dashboard</h1>
