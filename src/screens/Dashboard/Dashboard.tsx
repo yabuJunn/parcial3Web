@@ -48,6 +48,10 @@ export const Dashboard = () => {
           </div>
         ))}
       </div>
+
+      <button id="addPoemButton" onClick={() => { navigate('/form') }}>
+        &#43;
+      </button>
     </div>
   </>
 };

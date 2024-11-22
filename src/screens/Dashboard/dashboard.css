@@ -74,3 +74,16 @@
 .poem-button:active {
   background-color: #8b1a1a;
 }
+
+#addPoemButton {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vh;
+  width: 10vh;
+  height: 10vh;
+
+  font-size: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
