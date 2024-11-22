@@ -7,15 +7,6 @@ import { RootState } from "../../store/store";
 import { PoemType } from "../../types/poems";
 import { useNavigate } from "react-router-dom";
 
-// interface DashboardProps {
-//   poems: {
-//     id: string;
-//     title: string;
-//     excerpt: string;
-//   }[];
-//   onViewPoem: (id: string) => void;
-// }
-
 export const Dashboard = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
